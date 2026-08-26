@@ -1,0 +1,24 @@
+name: Security Scan
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  scan-obfuscated-code:
+    name: Scan for obfuscated code
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Scan tracked files
+        run: node scripts/security/scan-obfuscated-code.js
