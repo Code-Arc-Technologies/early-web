@@ -1,0 +1,7 @@
+#!/bin/sh
+# Blocks commits containing the obfuscated malware pattern found in this
+# project's history (Aug 2026 incident). Activated via `core.hooksPath`,
+# which is set automatically by the "prepare" npm script on `npm install`.
+
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+node "$REPO_ROOT/scripts/security/scan-obfuscated-code.js" --staged
