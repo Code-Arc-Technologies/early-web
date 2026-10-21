@@ -17,7 +17,7 @@ export default function PrivacyPage() {
         </Link>
 
         <h1 className="text-3xl sm:text-4xl font-bold text-black mb-3">Privacy Policy</h1>
-        <p className="text-sm text-gray-400 mb-12">Last updated: August 6, 2026</p>
+        <p className="text-sm text-gray-400 mb-12">Last updated: October 21, 2026</p>
 
         <div className="prose prose-gray max-w-none space-y-10">
           <section>
@@ -33,7 +33,10 @@ export default function PrivacyPage() {
                 <strong className="text-black">Alarm &amp; Usage Data:</strong> Your alarm configurations, wake-up times, streak counts, and mission completion history are stored locally on your device. If you choose to sign in, this data may be synced to our servers.
               </li>
               <li>
-                <strong className="text-black">Device Permissions:</strong> Early may request notification permissions (required for alarms) and motion permissions (for physical missions). We do not request access to your camera or microphone, and no audio or video is ever stored.
+                <strong className="text-black">Device Permissions:</strong> Early may request notification, motion, camera, and microphone permissions. Camera access is used only to verify certain wake-up challenges (such as finding a specific object), and microphone access is used only so you can read a wake-up challenge aloud — no audio or video is ever uploaded, transmitted, or stored; verification happens entirely on your device.
+              </li>
+              <li>
+                <strong className="text-black">Advertising Data:</strong> If you are shown ads, our ad partner (Google AdMob) may collect a non-personalized advertising identifier to serve and measure ads. We do not use Apple&apos;s App Tracking Transparency framework and do not request personalized ads.
               </li>
             </ul>
           </section>
@@ -64,6 +67,10 @@ export default function PrivacyPage() {
               <li><strong className="text-black">Supabase</strong> — database and authentication infrastructure.</li>
               <li><strong className="text-black">Google Sign-In / Apple Sign-In</strong> — optional third-party authentication.</li>
               <li><strong className="text-black">Expo</strong> — the platform used to build and distribute the app.</li>
+              <li><strong className="text-black">Google AdMob</strong> — provides advertising. Ads are served as non-personalized only; we do not request tracking permission and do not share data for cross-app ad targeting.</li>
+              <li><strong className="text-black">RevenueCat</strong> — manages subscription and purchase information, when payments are enabled.</li>
+              <li><strong className="text-black">Sentry</strong> — used for crash and error reporting to help us fix bugs.</li>
+              <li><strong className="text-black">PostHog</strong> — used for product analytics to understand how the app is used.</li>
             </ul>
             <p className="text-gray-600 leading-relaxed mt-3">
               We do not sell, rent, or trade your personal information to third parties for marketing purposes.
